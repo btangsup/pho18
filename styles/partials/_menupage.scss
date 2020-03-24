@@ -1,0 +1,80 @@
+// MENU PAGE STYLES //
+.menu-content {
+	text-align: left;
+}
+
+h2.menu-title {
+	text-transform: uppercase;
+	color: #fff;
+	background: url(../assets/icons/brush.png) no-repeat;
+	background-size: cover;
+	padding: 20px 25px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.food-category-content li {
+	list-style: none;
+}
+
+.menu-number {
+	color: $primary-color;
+}
+
+.food-category-container {
+	display: flex;
+}
+
+.food-category-content {
+	line-height: 3rem;
+}
+
+// fix description font
+
+
+.food-img-container,
+.food-category-content {
+	width: 50%;
+	padding: 20px;
+}
+
+.food-img,
+.food-img2 {
+	width: 500px;
+}
+
+.food-img2 {
+	padding-top: 50px;
+}
+
+// MENUPAGE MEDIA QUERIES // 
+
+@media(max-width: 950px) {
+	.menu-content p {
+		display: none;
+	}
+
+	.food-category-content li {
+		font-size: 2.2rem;
+	}
+
+	.food-img2 {
+		display: none;
+	}
+
+}
+
+@media (max-width: 650px) {
+	.menu-title {
+		font-size: 2rem;
+	}
+	
+	.food-category-container {
+		flex-flow: column;
+	}
+
+	.food-img-container,
+	.food-category-content {
+		width: 100%;
+	}
+}

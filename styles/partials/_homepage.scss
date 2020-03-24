@@ -1,0 +1,99 @@
+// HOME PAGE STYLES //
+
+.home-hero {
+	background-image: url(../assets/home-hero.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	@include flexCenter;
+}
+
+.main-title-container {
+	@include flexCenter;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 6.5rem;
+	color: $tertiary-color;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+.view-menu-button {
+	color: $tertiary-color;
+    text-decoration: none;
+    border: 1px solid $tertiary-color;
+    padding: 15px 45px;
+    border-radius: 25px;
+	font-size: 1.6rem;
+	display: inline-block;
+	margin: 0 auto;
+		&:hover {
+		background: $tertiary-color;
+		color: $primary-color;
+		transition: .5s ease;
+	}
+}
+
+// INFO STYLES // 
+.info-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	flex-flow: row-reverse;
+}
+.info-title {
+	color: $primary-color;
+	padding-top: 25px;
+}
+
+.map-responsive {
+	box-shadow: 5px 5px 5px 5px $primary-color;
+}
+
+.map {
+	width: 800px;
+	height: 400px;
+}
+
+.phollow:hover {
+	background-color: $primary-color;
+	color: $tertiary-color;
+	transition: 0.7s ease;
+}
+
+.info-doordash {
+	width: 180px
+}
+
+
+// MENU STYLES //
+
+.home-menu {
+	background-color: $secondary-color;
+}
+
+.brush {
+	display: inline-block;
+	margin: 10px;
+	}
+
+.menu-button {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3rem;
+	text-decoration: none;
+	background: url(../assets/icons/brush.png) no-repeat;
+	background-size: cover;
+	border-radius: 25%;
+	padding: 15px 55px;
+	color: white;
+	margin: 25px;
+	opacity: .6;
+	transition: .3s ease;
+	display: inline-block;
+	&:hover {
+	opacity: 1;
+	}
+}

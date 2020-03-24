@@ -1,0 +1,70 @@
+//nav scroll styles //
+
+.navScrolled {
+	background: $secondary-color;
+	transition: 0.5s ease;
+}
+
+// NAVIGATION STYLES //
+
+.main-nav-container {
+	width: 100%;	
+	position: fixed;
+	padding: 10px;
+	z-index: 999;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav {
+	display: flex;
+	padding-top: 15px;
+}
+
+.main-nav li {
+	list-style: none;
+}
+
+.main-nav a {
+	font-family: $heading-font;
+	text-decoration: none;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: $primary-color;
+	padding: 10px 25px;
+	&:hover {
+		border-bottom: 1px solid $primary-color;
+		transition: all 0.3s ease;
+		padding-bottom: 5px;
+	}
+}
+
+.scroll-main-nav {
+	background-color: $primary-color;
+}
+
+.hamburger {
+	display: none;
+}
+
+// SCROLL TO TOP // 
+.scrollToTop{
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    font-size: 4.5rem;
+    transition: 0.5s ease;
+	z-index: 999;
+	color: $primary-color;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+
+    &:active {
+        color: $primary-color;
+    }
+}

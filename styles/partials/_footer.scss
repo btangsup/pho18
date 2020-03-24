@@ -1,0 +1,46 @@
+// FOOTER STYLES //
+
+footer {
+	background-color: $secondary-color;
+	color: $tertiary-color;
+
+	a {
+		color: $tertiary-color;
+		text-decoration: none;
+	}
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.icon {
+	text-decoration: none;
+	color: white;
+	font-size: 4rem;
+	padding: 4px;
+
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+.footer-doordash {
+	padding: 15px 0;
+}
+
+.footer-contact-container {
+	text-align: left;
+}
+
+.phollow {
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid #CB2026;
+	margin-top: 10px;
+	padding: 15px 30px;
+	border-radius: 25px;
+	color: $primary-color;
+}
