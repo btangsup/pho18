@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     $("#navigation").click(function(){
         if ($("#navigation").hasClass("visible")) {
-            $(".menu").toggleClass("open");
+            $(".hamburger").toggleClass("open");
         } else {
         }
         $(this).attr("class", "slideOutLeft hidden");

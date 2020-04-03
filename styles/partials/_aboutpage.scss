@@ -1,0 +1,60 @@
+// ABOUT US PAGE STYLES //
+.menu-hero {
+	background-image: url(../assets/menu-hero.jpg);
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	@include flexCenter;
+	opacity: 0.8;
+}
+
+.about-hero {
+	background-image: url(../assets/about-hero.jpg);
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	@include flexCenter;
+	opacity: 0.8;
+}
+
+.about-txt-content {
+	padding: 30px;
+	box-shadow: 20px 20px $primary-color;
+	margin-bottom: 30px;
+	border: 3px solid $primary-color;
+}
+
+.about-txt-content p {
+	padding-top: 30px;
+	text-align: left;
+}
+
+.carousel-cell {
+	width: 30%;
+	height: 300px;
+	margin-right: 10px;
+	border-radius: 5px;
+	counter-increment: carousel-cell;
+}
+
+.flickity-button {
+	color: $primary-color;
+	transition: 0.3s ease;
+
+	&:hover {
+		background-color: $primary-color;
+		color: $tertiary-color;
+	}
+}
+
+.flickity-prev-next-button {
+	top: 35%;
+}
+
+.store-img {
+	height: auto;
+}

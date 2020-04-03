@@ -526,6 +526,84 @@ h2.menu-title {
   }
 }
 
+.menu-hero {
+  background-image: url(../assets/menu-hero.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.8;
+}
+
+.about-hero {
+  background-image: url(../assets/about-hero.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.8;
+}
+
+.about-txt-content {
+  padding: 30px;
+  -webkit-box-shadow: 20px 20px #CB2026;
+          box-shadow: 20px 20px #CB2026;
+  margin-bottom: 30px;
+  border: 3px solid #CB2026;
+}
+
+.about-txt-content p {
+  padding-top: 30px;
+  text-align: left;
+}
+
+.carousel-cell {
+  width: 30%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.flickity-button {
+  color: #CB2026;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.flickity-button:hover {
+  background-color: #CB2026;
+  color: #fff;
+}
+
+.flickity-prev-next-button {
+  top: 35%;
+}
+
+.store-img {
+  height: auto;
+}
+
 footer {
   background-color: #000;
   color: #fff;
@@ -573,75 +651,6 @@ footer a {
   padding: 15px 30px;
   border-radius: 25px;
   color: #CB2026;
-}
-
-.menu-hero {
-  background-image: url(../assets/menu-hero.jpg);
-  height: 50vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0.8;
-}
-
-.about-hero {
-  background-image: url(../assets/about-hero.jpg);
-  height: 50vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0.8;
-}
-
-.about-txt-content {
-  padding: 30px 0;
-}
-
-.carousel-cell {
-  width: 30%;
-  height: 300px;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-.flickity-button {
-  color: #CB2026;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.flickity-button:hover {
-  background-color: #CB2026;
-  color: #fff;
-}
-
-.flickity-prev-next-button {
-  top: 35%;
-}
-
-.store-img {
-  height: auto;
 }
 
 @media (max-width: 1150px) {
@@ -771,6 +780,12 @@ footer a {
   }
   .carousel-cell {
     width: 75%;
+  }
+  .about-txt-content {
+    -webkit-box-shadow: 0px 0px;
+            box-shadow: 0px 0px;
+    margin: 30px 0px;
+    padding: 10px;
   }
 }
 
